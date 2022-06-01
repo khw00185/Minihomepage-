@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab0edc2627.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mylayoutstyle.css">
+
+
+
+    <script>
+        window.onload = function() {
+            var clock = document.getElementById('clock');
+           setInterval(function () {
+                var now = new Date();
+                clock.innerHTML = now.toString();
+            },1000);  
+        };
+    </script>
+
+</head>
+<body  id="home">
+    <header id="top">
+        <div class="title-container">
+            <a href="웹프 나만의 레이아웃 만들기.html" class="title-text"><i class="fa-solid fa-house-chimney"></i> 김형우의 미니홈피</a>
+        </div>
+        <ul class="title-nav">
+            <li><a href="#home">홈</a></li>
+            <li><a href="#travel">관광지</a></li>
+            <li><a href="#food">먹거리</a></li>
+            <li><a href="#ending">마무리</a></li>
+        </ul>
+        <div class="music">
+            <audio controls loop autoplay preload="auto"><source src="https://drive.google.com/uc?export=download&id=1Fyr_cLB07qJpLEbOGRLg7Q_kX6MJ4YtQ" type="audio/mp3"></audio>
+        </div>
+        <button class="top-toggleBtn"><i class="fa-solid fa-bars"></i></button>
+     </header>
+     <main id="middle">
+
+        <section>
+            <h2 class="minihome">미니홈피</h2>
+            <div id="skyblue-background">
+                <div id="dottedline">
+                    <div id="lightgrey-background">
+    
+                        <div class="lightgrey-background-nav">
+                            <div class="l-b-n-s">
+                                <span style="font-size: 0.5em" >
+                                    TODAY <strong><span style="color:red"  style="font-size: small">5</span></strong> | TOTAL <b>201912052</b>
+                                </span>
+                            </div>
+                            <div class="nav-name">
+                                <span style="font-size: 0.8em">방명록@ㅡ@</span>
+                            </div>
+                            <div id="clock-div">
+                                <span style="font-size: 0.5em" id="clock"></span>
+                            </div>
+                        </div>
+    
+                        <div id="left">
+                            <div class="left-picture">
+                                <img src="http://drive.google.com/uc?export=view&id=1m-Vr6dXfeCnf4tuTv24WayPSUQ8fHm3m" width="100px" height="150px">
+                            </div>
+                            <div class="left-introduce">
+                                <hr>
+                                <span><b><a href="https://blog.naver.com/ilovemirim/222288514135" id="recipe">쌀국수 레시피</a></b><br>
+                                    재료:쌀국수 240g,미림 1큰술, 소고기(차돌박이,불고깃감) 200g, 
+                                    양파 1/2개, 청양고추 1개, 홍고추 1/2개,고수, 레몬, 쪽파 약간씩,
+                                    쌀국수 육수(비프 스톡) 1.2리터
+                                    <br>
+                                    <br>
+                                    쌀국수를 찬물에 1시간 이상 넣기-> 초절임 양파 채칼로 썰고
+                                    식초, 설탕에 10여 분 절이기->재료손질
+                                    ->소고기는 차돌박이나 불고깃감으로 준비 
+                                    핏물 빼고 미림 1큰술 재우기->비프스톡에
+                                    물 섞은 육수 1.2리터
+                                    끓으면 소고기 넣고 1분->숙주, 쌀국수 넣고 
+                                    2분 더 끓이기</span>
+                            </div>
+                            <div class="left-information">
+                                <p>EDIT  HISTORY</p>
+                                <hr>
+                                <b>김형우</b><br>
+                                <b style="color: orange;">컴퓨터 공학부 201912052</b>
+                                <select class="left-select">
+                                    <option>일촌 파도타기</option>
+                                    <option>010-2585-3287</option>
+                                    <option>ksng0185@naver.com</option>
+                                </select>
+                            </div>
+                        </div>  
+    
+                        <div id="right">
+                            <section  class="first">
+                                <article class="guestcontainer">
+                                    <div class="hr"></div>
+                                <div class="coment">
+                                    <div class="img-boy"></div>
+                                    <textarea class="textarea" ></textarea>
+                                </div>
+                                <div class="hr2"></div>
+                                </article>
+                                <input type="button" class="submit" value="확인">
+
+                                <script>
+
+                                </script>
+                                <article class="guestsecond">
+                                    <div class="hr"></div>
+                                    <div class="guestnav">
+                                        <span class="guestnavtxt">no. 2 &nbsp; &nbsp; <strong style="color: blue;">아무개2</strong></span>
+                                        <div class="hrcontainer">
+                                            <div class="guestimg"></div>
+                                            <span>들려요~</span>
+                                            <div class="khwcoment">
+                                                <span><strong style="color: blue;">김형우</strong> : 안녕안녕</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="guestsecond2">
+                                    <div class="hr"></div>
+                                    <div class="guestnav2">
+                                        <span class="guestnavtxt">no. 1 &nbsp; &nbsp; <strong style="color: blue;">아무개1</strong></span>
+                                        <div class="hrcontainer2">
+                                            <div class="guestimg2"></div>
+                                            <span>이번에 나만의 레이아웃을 만들면서 많은 시행착오를 겪고 <br>
+                                                 정말 많은 것을 배우는 시간이 되었습니다! <br>
+                                                 아직 부족한 것이 많지만  더욱 열심히 해서 더욱 발전하는 <br>
+                                                  모습을 보이겠습니다.</span>
+                                            <div class="khwcoment2">
+                                                <span><strong style="color: blue;">김형우</strong>: 감상해주셔서 감사합니다 !!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+
+                            </section>
+
+                        </div>
+    
+                        <div id="aside-bar">
+                            <ul>
+                                <li class="navi"><a href="웹프 나만의 레이아웃 만들기.html" class="aside-a "><div class="navi-home" id="navi-item"><p class="asd">홈</p></div></a></li>
+                                <li class="navi"><a href="My layout travel.html" class="aside-a"><div class="navi-travel" id="navi-item"><p class="asdd">관광지</p></div></a></li>
+                                <li class="navi"><a href="My layout food.html" class="aside-a"><div class="navi-food" id="navi-item"><p class="asdd">먹거리</p></div></a></li>
+                                <li class="navi"><a href="my layout guestbook.html" class="aside-a"><div class="navi-gallery" id="navi-item-select"><p class="asdd">방명록</p></div></a></li>
+                                <li class="navi"><a href="#" class="navi nav-video" class="aside-a"><div class="navi-video" id="navi-item"><p class="asdd">동영상</p></div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="videoclass">
+                <div id="video-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uDvqJGJfAZ8" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="travel">
+            <article >
+                <h2>관광지</h2>
+            </article>
+            <article class="row">
+                <div  class="row-distance">
+                    <a class="image-table-pink"><img src="http://drive.google.com/uc?export=view&id=1GptqpGgQHrGxrHSPfGmGS37xin9fJuNp" width="300px"height="300px" class="img-border"></a>
+                    <h1>핑크성당</h1>
+                </div>
+                <div  class="row-distance">
+                    <a class="image-table-vanahill"><img src="http://drive.google.com/uc?export=view&id=1tTIn8akuvaLzyWXq3-7v0YKAB2l68-gr" width="300px"height="300px" class="img-border"></a>
+                    <h1>바나힐</h1>
+                </div>
+            </article>
+            <article class="row">
+                <div class="row-distance">
+                     <a class="image-table-asian"><img src="http://drive.google.com/uc?export=view&id=1nrK0OCWPc_LA7cQHPcN8LNt7fjZJX_ye"width="300px"height="300px" class="img-border"></a>
+                    <h1>아시안 파크</h1>
+                </div>
+                <div  class="row-distance">
+                    <div class="double-photo-hoian">
+                        <img src="http://drive.google.com/uc?export=view&id=1w35OY-keomNRf8sWSjFXTYMzFzLP4pLW" width="300px" height="150px" class="img-borde">
+                        <img src="http://drive.google.com/uc?export=view&id=1jieQlvlSpXD4v5Z--w8BCDdXN7Jsk7bX" width="300px" height="150px" class="img-borde">
+                    </div>
+                    <h1>호이안 야시장</h1>
+                </div>
+            </article> 
+            <div class="pink">
+                <h1>2019.06.29 다낭 핑크성당</h1>
+                <p>제 기억상으론 사진보다 더 많은 사람들이 북적이면서 사진을 찍어갔어요</p>
+                <p>저희는 그냥 와 핑크색 성당이구나 하면서 얼른 사진 찍고 나갔던 기억 밖에 안 나네요..ㅎㅎ</p>
+                <p>그래도 사진보단 실물로 보면 조금 더 크고 이쁩니다 !</p>
+                <hr>
+                <div class="pinkk" id="pic"></div>
+            </div>
+            <div class="vanahill">
+                <h1>2019.06.28 바나힐</h1>
+                <p>다낭 갔는데 바나힐 안 가면 바보일 정도로 필수 코스예요! </p>
+                <div class="cablecar" id="pic"></div>
+                <p>꽤 오랜 시간동안 케이블카 타고 높이 올라갑니다. <br>그렇게 올라가다 보면 ...</p>
+                <div class="Good" id="pic"></div>
+                <p>이렇게 멋진 걸 볼 수 있어요 ! <br>이거 이외에도 볼거리가 많아요.</p>
+                <div class="rail" id="pic"></div>
+                <p>더운 날 이거 타려고 오랫동안 줄 서는데 베트남 꼬마들의 새치기에 짜증이 많이 났었네요  <br>
+                     그때 그 꼬마애들 어떤 베트남 아줌마한테 걸려서 욕 엄청 먹었는데 그때 속이 얼마나 시원하던지..</p>
+                <p>아무튼 이거 시원하고 재밌습니다 ㅎㅎ</p>
+            </div>
+            <div class="asian">
+                <h1>2019.06.26 다낭 아시안파크</h1>
+                <p>다낭 아시안파크는 놀이공원이예요 !</p>
+                <p>생각보다 무섭고 재미있는 놀이기구들이 많이 있습니다.</p>
+                <div class="asian-cobra" id="pict"></div>
+                <p>왜 사진이 이런거 밖에 없는거지..</p>
+                <div class="swing" id="pic"></div>
+                <p>이거 롯데월드의 자이로스윙 같은 느낌인데 더 무서워요! <br>제일 기억에 남았던 놀이기구입니다.</p>
+            </div>
+            <div class="hoian">
+                <h1>2019.06.30 호이안 올드타운</h1>
+                <p>호이안도 다낭 여행 가게되면 꼭 가봐야 하는 필수코스예요!</p>
+                <p>호이안의 올드타운은 밤에 정말 이쁩니다.</p>
+                <div class="hoian-street" id="pic"></div>
+                <p>저 길 따라 쭉 야시장이예요. 먹을 게 엄청 많아요.</p>
+                <div class="frog" id="pic"></div>
+                <p>당시에는 기겁 했는데 지금 생각해보면 도전 해볼 걸 싶어요..ㅎㅎ</p>
+            </div>
+        </section>
+
+        
+        <section id="food">
+            <article>
+                <h2 class="travel">먹거리</h2>
+            </article>
+            <article class="row2">
+                <div  class="row-distance2">
+                    <a class="image-table"><img src="http://drive.google.com/uc?export=view&id=1peppEPY2H1MXyOuF34tjU84bb7b7w5On" width="300px"height="300px" class="img-borderr"></a>
+                    <h1>구시가지 호텔조식</h1>
+                </div>
+                <div  class="row-distance2">
+                    <a class="image-table"><img src="http://drive.google.com/uc?export=view&id=18qjiDNfVEN56X2ZW0SAybmgQxdhx677h" width="300px"height="300px" class="img-borderr"></a>
+                    <h1>숯불구이 하이코이 <br>야장 감성에 엄청 저렴하고 맛있어요. <br><br>
+                    현지 느낌 100점 <br>맛 90점<br>위생점수 0점</h1>
+                </div>
+            </article>
+            <article class="row2">
+                <div class="row-distance2">
+                     <a class="image-table"><img src="http://drive.google.com/uc?export=view&id=1rA1ZwIRumkKjQJDd9y7h5eweZJRWy-P4"width="300px"height="300px" class="img-borderr"></a>
+                    <h1>쿠킹클래스투어에서 제가 만든 음식입니다. *ㅡ*<br><br>
+                    쿠킹클래스 꼭 하세요 !@!@</h1>
+                </div>
+                <div  class="row-distance2">
+                    <div class="double-photo-bbq" width="300vw"height="160vh">
+                        <img src="http://drive.google.com/uc?export=view&id=1BGDej0quQkwsHZ_W4Wflt36BUlqHKhh7" width="300px" class="img-borderr">
+                        <img src="http://drive.google.com/uc?export=view&id=1YOyCyUGwpi7GKKvPsEl1iWNx8-K9uNBj" width="300px" class="img-borderr">
+                    </div>
+                    <h1>다낭 I LOVE BBQ</h1>
+                </div>
+            </article> 
+            <article class="row2">
+                <div  class="row-distance2">
+                    <a class="image-table"><img src="http://drive.google.com/uc?export=view&id=1iFPiFrq2RqYmOJQYRoFewsHQYtc1AQwi" width="300px"height="300px" class="img-borderr"></a>
+                    <h1>다낭 배달 피자</h1>
+                </div>
+                <div  class="row-distance2">
+                    <a class="image-table"><img src="http://drive.google.com/uc?export=view&id=1mqlj79Gnz6bbA5uGKZ0EDyurRoX9689M" width="300px"height="300px" class="img-borderr"></a>
+                    <h1>다낭 JMT 퍼홍 쌀국수</h1>
+                </div>
+            </article>
+            <article class="row2">
+                <div  class="row-distance2">
+                    <a class="image-table"><img src="http://drive.google.com/uc?export=view&id=1ghdqIEvjJVk98oVLLpiFn6rKFGKv0U2W" width="300px"height="300px" class="img-borderr"></a>
+                    <h1>지금은 폐업한 <br>COBA 반미ㅠ <br><br>서브웨이보다 맛있었는데..</h1>
+                </div>
+                <div  class="row-distance2">
+                    <a class="image-table"><img src="http://drive.google.com/uc?export=view&id=1Rt-DiJ3fiq40yL8NX5wdwlnfRIRTEWDu" width="300px"height="300px" class="img-borderr"></a>
+                    <h1>다낭 버거브로스</h1>
+                </div>
+            </article>
+        </section>
+
+        <section id="ending" class="ending-text">
+            <h1 style="font-weight: bold">여행 후 느낀점</h1>
+            <img src="http://drive.google.com/uc?export=view&id=1_ssZ8fYId0s-VCa0JtvjI9TUJZsKaXc1">
+            <p>베트남은 물가도 싸고 이쁜 바다도 많아서 먹고 놀며 휴양하기 정말 좋은 나라입니다.</p>
+            <p>베트남 여행을 생각하고 있다면 고민하지 마시고 떠나세요 !! <br>날짜는 길게 잡는 걸 추천드려요.</p>
+            <p>호텔이나 식비가 저렴해서 전혀 부담이 되지 않습니다.</p>
+            <p>초 여름 비수기에 9박 10일로 총 여행 경비는 70만원 밖에 들지 않았어요!</p>
+            <p>사실 다낭 9박 10일은 좀 길긴 합니다... !! 7일차부터 할 게 없어요ㅜ</p>
+            <p>여름 베트남 .. 정말 쪄 죽습니다. 진짜 못 돌아다녀요. 6월 말에 갔다가 더워 죽을 뻔 했습니다 ㅎ..</p>
+            <p>그래도 돈은 부족한데 베트남은 가고 싶다면 여름에 가는 것도 나름 재미 있어요. 저에게는 값진 추억이었습니다. </p>
+            <p>고민은 여행만 늦출 뿐 ! 이번 여름방학에 여행 계획 짜보시는건 어떤가요!? </p>
+        </section>
+    </main>
+
+    <footer id="bottom">
+        <div class="bottom-div">
+            <span class="bottom-ment" style="font-weight: bold;">@ made in K_HyungWoo</span>
+        </div>
+    </footer>
+    <script>
+        $(".nav-video").click(function(){
+      $(this).toggleClass("nav-video");
+    
+      if ($(this).hasClass("nav-video")) {
+        $(".videoclass").animate({ left: "-100%"}, 800);  
+      } else {
+        $(".videoclass").animate({ left: "100%"}, 800);  
+      }
+    });
+    </script>
+    <script>
+        const toggleBtn = document.querySelector('.top-toggleBtn');
+        
+        const menu = document.querySelector('.title-nav');
+        const audio = document.querySelector('.music');
+
+        toggleBtn.addEventListener('click', () =>{
+            menu.classList.toggle('active');
+            audio.classList.toggle('active');
+        });
+    </script>
+        <script>
+            $("document").ready( function(){
+                       $('.image-table-pink').click(function(){
+                           $(".pink").fadeIn(1000);
+                       })
+                       $('.pink').click(function(){
+                           $(".pink").fadeOut(1000);
+                       })
+                   })
+       
+                   $("document").ready( function(){
+                       $('.image-table-vanahill').click(function(){
+                           $(".vanahill").fadeIn(1000);
+                       })
+                       $('.vanahill').click(function(){
+                           $(".vanahill").fadeOut(1000);
+                       })
+                   })
+                   $("document").ready( function(){
+                       $('.image-table-asian').click(function(){
+                           $(".asian").fadeIn(1000);
+                       })
+                       $('.asian').click(function(){
+                           $(".asian").fadeOut(1000);
+                       })
+                   })
+                   $("document").ready( function(){
+                       $('.double-photo-hoian').click(function(){
+                           $(".hoian").fadeIn(1000);
+                       })
+                       $('.hoian').click(function(){
+                           $(".hoian").fadeOut(1000);
+                       })
+                   })
+       </script>
+       
+</body>
+</html>
